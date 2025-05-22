@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-
+mongoose.set('strictQuery', true);//----------------
 const LogSchema = new mongoose.Schema({
   eventId: {
     type: mongoose.Schema.ObjectId,

@@ -1,5 +1,5 @@
 const mongoose = require("mongoose")
-
+mongoose.set('strictQuery', true);//----------------
 const RegistrationSchema = new mongoose.Schema({
   event: {
     type: mongoose.Schema.ObjectId,
